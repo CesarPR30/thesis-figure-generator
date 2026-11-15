@@ -1,0 +1,9 @@
+# Datos reales para exportar figuras en local. Los escribe el script de
+# publicación del pipeline y nunca salen de esta máquina (ver CONTRACT.md).
+data/privado/
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+~$*

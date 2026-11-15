@@ -1,0 +1,15 @@
+{
+  "contract": "thesis-figure-generator/data",
+  "version": 1,
+  "description": "Qué datos puede versionar este repositorio público. Lo lee tools/validate_data.py (CI, pre-push) y el script de publicación del pipeline antes de copiar nada.",
+  "allowed": {
+    "data/sintetico": ["explainer.json", "metodo.json", "temporal.json"]
+  },
+  "private_dir": "data/privado",
+  "meta_required": {
+    "synthetic": true,
+    "dataset": "sintetico"
+  },
+  "max_file_mb": 50,
+  "text_extensions": [".html", ".js", ".json", ".md", ".css", ".svg", ".txt", ".yml", ".yaml"]
+}

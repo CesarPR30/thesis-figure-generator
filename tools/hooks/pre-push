@@ -1,0 +1,6 @@
+#!/bin/sh
+# Se activa una vez por clon con:  git config core.hooksPath tools/hooks
+# Impide subir el repositorio si algún archivo versionado rompe el contrato de datos.
+PY=python
+command -v "$PY" >/dev/null 2>&1 || PY=python3
+exec "$PY" tools/validate_data.py
